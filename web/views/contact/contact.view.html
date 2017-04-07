@@ -1,23 +1,31 @@
 <md-card>
-    <md-card-title>
-        <img ng-src="https://www.gravatar.com/avatar/4327ede90ccad118a71ced1b343e53df?s=1024" class="md-avatar avatar-large" alt="A Toucan" md-whiteframe="5" />
+    <md-card-title layout="row" layout-xs="column" layout-align="start center">
+        <md-card-title-media>
+            <div class="md-media-lg card-media">
+                <img ng-src="https://www.gravatar.com/avatar/4327ede90ccad118a71ced1b343e53df?s=1024" class="md-avatar avatar-large" alt="My Picture" md-whiteframe="5" />
+            </div>
+        </md-card-title-media>
         <md-card-title-text>
             <span class="md-headline">Aesa Kamar</span>
-            <span class="md-subhead">Software developer</span>
+            <span class="md-subhead">Distrubuted Computing Consultant, Data Scientist</span>
         </md-card-title-text>
-        <md-card-title-media>
-            <div class="md-media-lg card-media"></div>
-        </md-card-title-media>
     </md-card-title>
     <md-card-content>
         <p>I haven't finished the website yet, but stay tuned!</p>
-        <p>Hi, Des!
-            <md-icon md-font-set="material-icons" class="md-48">visibility</md-icon>
-            <md-icon md-font-set="material-icons" class="md-48">visibility</md-icon>
-        </p>
+        <md-button href="https://drive.google.com/open?id=0BwkMe7DRbc4vV05OUmJMbENJb00">Click Here For Resume</md-button>
     </md-card-content>
     <md-card-actions layout="row" layout-align="end center">
-        <md-button>Action 1</md-button>
-        <md-button>Action 2</md-button>
+        <md-button target="_blank" href="https://github.com/AesaKamar">
+            <md-tooltip md-direction="top">GitHub</md-tooltip>
+            <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </md-button>
+        <md-button target="_blank" href="https://www.linkedin.com/in/aesakamar/">
+            <md-tooltip md-direction="top">LinkedIn</md-tooltip>
+            <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
+        </md-button>
+        <md-button target="_blank" href=mailto:Aesa.Kamar@gmail.com ">
+            <md-tooltip md-direction="top ">Email</md-tooltip>
+            <i class="fa fa-2x fa-envelope " aria-hidden="true "></i>
+        </md-button>
     </md-card-actions>
 </md-card>

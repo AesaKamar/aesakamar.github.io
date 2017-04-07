@@ -64,6 +64,7 @@
             </md-toolbar>
             <md-content class="sidenav-content" layout-padding layout="column" layout-align="center center" ng-repeat="button in vm.LeftNavButtons" md-disable-scroll-target="">
                 <md-button class="md-primary" layout-align="center center">
+                    <md-tooltip md-direction="right">{{button.description}}</md-tooltip>
                     <md-icon md-font-set="material-icons" class="md-48">{{button.icon}}</md-icon>
                 </md-button>
             </md-content>

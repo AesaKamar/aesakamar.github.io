@@ -1,7 +1,5 @@
 .avatar {
   position: relative;
-  width: 128px;
-  height: 128px;
   border-radius: 50%;
   display: inline-block;
   overflow: hidden;
@@ -14,8 +12,6 @@
 }
 .avatar-large {
   position: relative;
-  width: 256px;
-  height: 256px;
   border-radius: 50%;
   display: inline-block;
   overflow: hidden;

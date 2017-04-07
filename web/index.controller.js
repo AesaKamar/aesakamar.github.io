@@ -8,10 +8,10 @@
         let vm = this;
 
         vm.LeftNavButtons = [
-            { icon: "contact_mail" },
-            { icon: "code" },
-            { icon: "dashboard" },
-            { icon: "thumb_up" },
+            { icon: "contact_mail", description: "Contact" },
+            { icon: "code", description: "My Work" },
+            { icon: "dashboard", description: "Blogs and Talks" },
+            { icon: "thumb_up", description: "Things I Like" },
 
         ];
 
