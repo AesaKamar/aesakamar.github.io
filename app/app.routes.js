@@ -10,7 +10,7 @@
             .state('index', {
                 url: '/',
                 views: {
-                    'contact': { templateUrl: '../index/contact/contact.view.html' }
+                    'contact': { templateUrl: '../views/contact/contact.view.html' }
                 }
             });
     }]);
