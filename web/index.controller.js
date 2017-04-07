@@ -4,14 +4,15 @@
     /**
      * Initialize controller
      */
-    app.controller('IndexController', [function IndexController() {
+    app.controller('IndexController', ['$uiViewScroll', function IndexController($uiViewScroll) {
         let vm = this;
+        vm._ = _
 
         vm.LeftNavButtons = [
-            { icon: "contact_mail", description: "Contact" },
-            { icon: "code", description: "My Work" },
-            { icon: "dashboard", description: "Blogs and Talks" },
-            { icon: "thumb_up", description: "Things I Like" },
+            { icon: "contact_mail", description: "Contact", sectionId: "#contact" },
+            { icon: "code", description: "My Work", sectionId: "#work" },
+            { icon: "dashboard", description: "Blogs and Talks", sectionId: "#publications" },
+            { icon: "thumb_up", description: "Things I Like", sectionId: "#mylikes" },
 
         ];
 
@@ -24,6 +25,8 @@
             },
             {}
         ]
+
+        vm.goTo = (_elemToFind) => $uiViewScroll($(_elemToFind));
 
     }]);
 
