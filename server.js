@@ -9,7 +9,7 @@ const config = require('./server.config.json');
 /**
  * Homepage
  */
-app.use("/", express.static('web'));
+app.use("/web", express.static('web'));
 
 app.listen(config.port.internal, () => {
     console.log('Listening on port ' + config.port.internal + '!');
