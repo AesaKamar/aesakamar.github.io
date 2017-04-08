@@ -23,6 +23,10 @@
   -moz-transform: scale(0.7);
 }
 
+.link-button {
+  padding-top: 6px;
+}
+
 .material-icons.md-18 {
   font-size: 18px;
   height: 18px;

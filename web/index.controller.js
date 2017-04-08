@@ -4,9 +4,8 @@
     /**
      * Initialize controller
      */
-    app.controller('IndexController', ['$uiViewScroll', function IndexController($uiViewScroll) {
+    app.controller('IndexController', ['$uiViewScroll', '_', function IndexController($uiViewScroll, _) {
         let vm = this;
-        vm._ = _
 
         vm.LeftNavButtons = [
             { icon: "contact_mail", description: "Contact", sectionId: "#contact" },

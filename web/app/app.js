@@ -11,6 +11,9 @@
     /**
      * Do more stuff
      */
+    //Setup Lodash globally
+    app.constant('_', window._)
+        .run(['$rootScope', ($rootScope) => $rootScope._ = window._]);
 
 
 

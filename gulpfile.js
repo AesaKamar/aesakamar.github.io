@@ -20,7 +20,7 @@ const
 // Static server
 gulp.task('serve', ['browser-sync', 'inject'], () => {
     gulp.watch("./**").on('change', reload);
-    gulp.watch('./**/*.less', ['less']);
+    gulp.watch('./web/styles/*.less', ['less']);
 });
 
 gulp.task('browser-sync', ['nodemon'], () => {
@@ -63,7 +63,7 @@ gulp.task('inject', () => {
 });
 
 gulp.task('less', () => {
-    return gulp.src('./web/**/*.less')
+    return gulp.src('./web/styles/*.less')
         .pipe(less({
             paths: [path.join(__dirname, 'less', 'includes')]
         }))
