@@ -10,7 +10,8 @@
          companyName: '@',
          position: '@',
          description: '@',
-         companyLogoUrl: '@'
+         companyLogoUrl: '@', 
+         link: '@'
 
        },
        controllerAs: 'vm',
