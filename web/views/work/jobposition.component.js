@@ -5,23 +5,17 @@
       * Initialize controller
       */
      app.component('jobPosition', {
-	   bindings: {
-		   count: '=',
-		   companyName: "@",
-		   position: "@",
-		   description: "@",
-		   companyLogoUrl: '@'
+       bindings: {
+         count: '=',
+         companyName: '@',
+         position: '@',
+         description: '@',
+         companyLogoUrl: '@'
 
-		},
+       },
        controllerAs: 'vm',
        controller: function() {
-		 let vm = this ;
-		 function increment() {
-           this.count++;
-         } function decrement() {
-           this.count--;
-         } this.increment = increment;
-         this.decrement = decrement;
+         let vm = this;
        },
        templateUrl: '/web/views/work/jobposition.view.html'
      })
