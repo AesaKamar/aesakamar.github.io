@@ -1,0 +1,23 @@
+<md-card>
+	<md-card-title>
+	  <md-card-title-text>
+		<span class="md-headline">{{vm.title}}</span>
+		<span class="md-subhead">{{vm.subtitle}}</span>
+	  </md-card-title-text>
+	  <md-card-title-media>
+		<div class="md-media-md card-media">
+			<img ng-src="{{vm.image}}" class="md-card-image" 
+			alt="{{vm.title}} Image">
+		</div>
+	  </md-card-title-media>
+	</md-card-title>
+	<md-card-content>
+		<p>{{vm.description}}</p>
+	  </md-card-content>
+	  <md-card-actions layout="row" layout-align="end center">
+		<md-button class="md-icon-button" aria-label="Share" ng-href="{{vm.link}}">
+			<md-tooltip md-direction="top ">Go to Website</md-tooltip>
+			<i class="fa  fa-share " aria-hidden="true "></i>
+		</md-button>
+	  </md-card-actions>
+  </md-card>
